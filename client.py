@@ -3,10 +3,14 @@
 import socket
 
 ## SAMPLE CLIENT PROGRAM
-#s = socket.socket()
-#host = '127.0.0.1'
-#port = 12345
-#s.connect((host,port))
+def connectNow(i):
+    s = socket.socket()
+    host = '127.0.0.1'
+    port = 8787
+    s.connect((host,port))
+    msg = " ".join(['DATA PACKET',str(i)])
+    s.send(msg)
+    s.close
 #
 ### RECEIVE DATA
 #print s.recv(1024)

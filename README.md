@@ -16,3 +16,11 @@ inside new thread.
 * The 'Main' block of server code will handle everything
 related to creating server, listening for connection,
 mapping devices, forwarding messages etc.
+
+============================================================
+
+## PROGRESS
+
+* Server accepting multiple connections, and also storing
+them in a secure array.
+* Server also quitting appropriately
